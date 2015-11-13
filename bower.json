@@ -1,0 +1,28 @@
+{
+  "name": "cv",
+  "description": "Xuning Tian's CV",
+  "main": "index.js",
+  "authors": [
+    "Xuning Tian"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "cv",
+    "front",
+    "end",
+    "developer",
+    "front",
+    "end"
+  ],
+  "homepage": "https://github.com/txn513/cv",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}

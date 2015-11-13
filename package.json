@@ -1,0 +1,31 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "Xuning Tian's CV",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/txn513/cv.git"
+  },
+  "keywords": [
+    "cv",
+    "front",
+    "end",
+    "developer",
+    "front",
+    "end"
+  ],
+  "author": "Xuning Tian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/txn513/cv/issues"
+  },
+  "homepage": "https://github.com/txn513/cv#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-uglify": "^1.0.1"
+  }
+}
