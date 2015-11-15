@@ -1,0 +1,26 @@
+/*public style*/
+body {
+	text-align: center;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+#content .col-sm-4{
+	border-right: 1px solid #000;
+}
+#content .section1 {
+	width: 100%;
+	height: 500px;
+	border: 1px solid #000;
+}
+#content .section1 .avator {
+	width: 131px;
+	height: 166px;
+}
+#content .section1 .avator .line{
+	width: 33.3%;
+	border-bottom: 1px solid #000;
+}
