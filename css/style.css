@@ -2,25 +2,51 @@
 body {
 	text-align: center;
 }
-.left {
-	float: left;
+/*img{
+	height: 100%;
+}*/
+.section .title {
+	position: relative;
 }
-.right {
-	float: right;
+.section .lineleft {
+	position: absolute;
+	top: 50%;
+	left: 5%;
 }
+.section .lineright {
+	position: absolute;
+	top: 50%;
+	right: 5%;
+}
+
+/* header */
+#header {
+	height: 60px;
+}
+
+/* content */
 #content .col-sm-4{
 	border-right: 1px solid #000;
 }
 #content .section1 {
 	width: 100%;
 	height: 500px;
-	border: 1px solid #000;
+	/*border: 1px solid #000;*/
 }
-#content .section1 .avator {
-	width: 131px;
-	height: 166px;
+/* section1 */
+#content .section1 .avatar {
+	width: 100px;
+	margin: 0 auto;
 }
-#content .section1 .avator .line{
-	width: 33.3%;
-	border-bottom: 1px solid #000;
+#content .section1 .line{
+	height: 100%;
+	width: 10%;
+	border-top: 1px solid #000;
+}
+#content .section1 h1 {
+	font-size: 22px;
+}
+#content .section1 .sub_title {
+	color: #950b13;
+	font-size: 10px;
 }
