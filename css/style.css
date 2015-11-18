@@ -1,13 +1,13 @@
 /*public style*/
+html {
+	font-size: 625%;
+}
 body {
 	text-align: center;
 	font-family: "微软雅黑"；
 }
-/*img{
-	height: 100%;
-}*/
 h2 {
-	font-size: 18px;
+	font-size: 0.18rem;
 	font-weight: normal;
 }
 ul, li{
@@ -16,8 +16,22 @@ ul, li{
 	padding: 0;
 	margin: 0;
 }
-
-.section .title {
+#content .section {
+	margin-bottom: 50px;
+}
+#content .wrap {
+	padding-top: 0.3rem;
+}
+#content .left_wrap {
+	padding-top: 0.1rem;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+#content .right_wrap {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+#content .title {
 	overflow: hidden;
 	position: relative;
 	margin-bottom: 10px;
@@ -30,12 +44,12 @@ ul, li{
 .section .lineleft {
 	position: absolute;
 	top: 50%;
-	left: 5%;
+	left: 0%;
 }
 .section .lineright {
 	position: absolute;
 	top: 50%;
-	right: 5%;
+	right: 0%;
 }
 .section .icon {
 	width: 48px;
@@ -49,13 +63,30 @@ ul, li{
 	font-size: 38px;
 	color: #fff;
 }
+
+#content .section .main_list li{
+	position: relative;
+	padding-left: 5%;
+	/*height: 30px;*/
+	line-height: 30px;
+}
+#content .section .main_list .bullet {
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 0.2rem;
+
+}
+#content .section .main_list h2 span {
+	color: #a13322;
+}
 /* header */
 #header {
 	height: 60px;
 }
 
 /* content */
-#content .col-sm-4{
+#content .col-md-5{
 	border-right: 1px solid #000;
 }
 #content .section1 {
@@ -78,13 +109,13 @@ ul, li{
 	font-size: 24px;
 }
 #content .section1 p {
-	color: #950b13;
+	color: #a13322;
 	font-size: 10px;
 }
 #content .section1 .sub_title {
 	font-size: 14px;
 }
-/* section2 */
+/* contact section */
 /*#content .contact .line{
 	height: 100%;
 	width: 10%;
@@ -108,12 +139,37 @@ ul, li{
 
 
 /* right section*/
-#content .right_section {
-	padding-top: 30px;
-}
+
 /* overview */
 /*#content .overview .line{
 	height: 100%;
 	width: 30%;
 	border-top: 1px solid #000;
 }*/
+#content .overview {
+	margin-bottom: 50px;
+}
+/* experience section */
+#content .experience {
+	margin-bottom: 50px;
+}
+#content .experience .main_list .list_title{
+	height: auto;
+}
+#content .experience .main_list .bullet{
+	top: -6px;
+}
+#content .experience ul.details li{
+	padding: 0;
+}
+
+
+
+
+@media screen and (max-width: 970px) {
+	#content .section .main_list li{
+		padding-left: 10%;
+		/*height: 30px;*/
+		line-height: 25px;
+	}
+}
