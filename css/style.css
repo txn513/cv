@@ -1,21 +1,26 @@
-/*public style*/
-html {
-	font-size: 625%;
-}
-body {
-	text-align: center;
-	font-family: "微软雅黑"；
-}
-h2 {
-	font-size: 0.18rem;
-	font-weight: normal;
-}
+/* reset */
 ul, li{
 	list-style: none;
 	text-align: left;
 	padding: 0;
 	margin: 0;
 }
+/*a {
+	color: #000;
+}*/
+/*public style*/
+html {
+	font-size: 625%;
+}
+body {
+	text-align: center;
+	font-family: "微软雅黑";
+}
+h2 {
+	font-size: 0.18rem;
+	font-weight: normal;
+}
+
 #content .section {
 	margin-bottom: 50px;
 }
@@ -52,18 +57,25 @@ ul, li{
 	right: 0%;
 }
 .section .icon {
+	position: relative;
 	width: 48px;
 	height: 48px;
 	border-radius: 50%;
 	background-color: #000;
-	margin: 0 auto 10px;
+	margin: 0 auto;
 }
 .section .icon i {
-	margin-top: 5px;
-	font-size: 38px;
+	position: absolute;
+	font-size: 34px;
+	top: 50%;
+	left: 50%;
 	color: #fff;
+	-webkit-transform: translate(-50%, -50%);
+	-webkit-transition: all 0.5s;
 }
-
+.section .icon:hover i{
+	-webkit-transform: translate(-40%, -60%);
+}
 #content .section .main_list li{
 	position: relative;
 	padding-left: 5%;
@@ -80,39 +92,44 @@ ul, li{
 #content .section .main_list h2 span {
 	color: #a13322;
 }
-/* header */
+/* publick style end */
+/* header section */
 #header {
 	height: 60px;
 }
+/* header section end */
 
 /* content */
 #content .col-md-5{
 	border-right: 1px solid #000;
 }
-#content .section1 {
+#content .job-title {
 	width: 100%;
 	height: 300px;
 	/*border: 1px solid #000;*/
 	margin-bottom: 10px;
 }
-/* section1 */
-#content .section1 .avatar {
+/* container */
+/* container end */
+
+/* job-title */
+#content .job-title .avatar {
 	width: 100px;
 	margin: 0 auto;
 }
-#content .section1 .line{
+#content .job-title .line{
 	height: 100%;
 	width: 15%;
 	border-top: 1px solid #000;
 }
-#content .section1 h1 {
+#content .job-title h1 {
 	font-size: 24px;
 }
-#content .section1 p {
+#content .job-title p {
 	color: #a13322;
 	font-size: 10px;
 }
-#content .section1 .sub_title {
+#content .job-title .sub_title {
 	font-size: 14px;
 }
 /* contact section */
@@ -136,7 +153,19 @@ ul, li{
 	position: absolute;
 	left: 30%;
 }
-
+/* skill section */
+#content .skill .row {
+	padding: 0 10px;
+}
+#content .skill span {
+	text-align: right;
+}
+#content .skill .progress {
+	background-color: #a13322;
+}
+#content .skill .progress-bar {
+	background-color: #000;
+}
 
 /* right section*/
 
@@ -167,6 +196,7 @@ ul, li{
 
 
 @media screen and (max-width: 970px) {
+	body{font-family:Helvetica;}
 	#content .section .main_list li{
 		padding-left: 10%;
 		/*height: 30px;*/
