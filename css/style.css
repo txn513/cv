@@ -1,12 +1,31 @@
 /*public style*/
 body {
 	text-align: center;
+	font-family: "微软雅黑"；
 }
 /*img{
 	height: 100%;
 }*/
+h2 {
+	font-size: 18px;
+	font-weight: normal;
+}
+ul, li{
+	list-style: none;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+}
+
 .section .title {
+	overflow: hidden;
 	position: relative;
+	margin-bottom: 10px;
+}
+#content .line{
+	height: 100%;
+	width: 25%;
+	border-top: 1px solid #000;
 }
 .section .lineleft {
 	position: absolute;
@@ -18,7 +37,18 @@ body {
 	top: 50%;
 	right: 5%;
 }
-
+.section .icon {
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	background-color: #000;
+	margin: 0 auto 10px;
+}
+.section .icon i {
+	margin-top: 5px;
+	font-size: 38px;
+	color: #fff;
+}
 /* header */
 #header {
 	height: 60px;
@@ -30,8 +60,9 @@ body {
 }
 #content .section1 {
 	width: 100%;
-	height: 500px;
+	height: 300px;
 	/*border: 1px solid #000;*/
+	margin-bottom: 10px;
 }
 /* section1 */
 #content .section1 .avatar {
@@ -40,13 +71,49 @@ body {
 }
 #content .section1 .line{
 	height: 100%;
-	width: 10%;
+	width: 15%;
 	border-top: 1px solid #000;
 }
 #content .section1 h1 {
-	font-size: 22px;
+	font-size: 24px;
 }
-#content .section1 .sub_title {
+#content .section1 p {
 	color: #950b13;
 	font-size: 10px;
 }
+#content .section1 .sub_title {
+	font-size: 14px;
+}
+/* section2 */
+/*#content .contact .line{
+	height: 100%;
+	width: 10%;
+	border-top: 1px solid #000;
+}*/
+#content .contact .list {
+	height: 100%;
+	padding: 0 10px;
+}
+#content .contact li {
+	height: 30px;
+	position: relative;
+	padding-left: 5%;
+	line-height: 30px;
+	font-size: 14px;
+}
+#content .contact li span{
+	position: absolute;
+	left: 30%;
+}
+
+
+/* right section*/
+#content .right_section {
+	padding-top: 30px;
+}
+/* overview */
+/*#content .overview .line{
+	height: 100%;
+	width: 30%;
+	border-top: 1px solid #000;
+}*/
