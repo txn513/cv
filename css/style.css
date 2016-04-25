@@ -92,7 +92,7 @@ h2 {
 #content .section .main_list h2 span {
 	color: #a13322;
 }
-/* publick style end */
+/* public style end */
 /* header section */
 #header {
 	height: 60px;
@@ -178,10 +178,12 @@ h2 {
 #content .overview {
 	margin-bottom: 50px;
 }
+/* overview section end */
 /* experience section */
 #content .experience {
 	margin-bottom: 50px;
 }
+
 #content .experience .main_list .list_title{
 	height: auto;
 }
@@ -191,9 +193,24 @@ h2 {
 #content .experience ul.details li{
 	padding: 0;
 }
+/* experience section end*/
 
+/* project section */
+#content .project {
+	margin-bottom: 50px;
+}
 
+#content .project .main_list .list_title{
+	height: auto;
+}
+#content .project .main_list .bullet{
+	top: -6px;
+}
+#content .project ul.details li{
+	padding: 0;
+}
 
+/* project section end */
 
 @media screen and (max-width: 970px) {
 	body{font-family:Helvetica;}
@@ -201,5 +218,17 @@ h2 {
 		padding-left: 10%;
 		/*height: 30px;*/
 		line-height: 25px;
+	}
+	.section .icon:hover i{
+		-webkit-transform: translate(-50%, -50%);
+	}
+	#content .experience h2 {
+		line-height: 30px;
+	}
+	#content .left_wrap {
+		padding: 0;
+	}
+	#content .right_wrap {
+		padding: 0;
 	}
 }
