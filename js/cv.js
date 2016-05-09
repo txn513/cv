@@ -17,12 +17,12 @@ $(function(){
 			else{
 				mobileScroll();
 			}
-			if ($(window).scrollTop() > animation_1){
-				alert(1);
-			}
-			else{
+			// if ($(window).scrollTop() > animation_1){
+			
+			// }
+			// else{
 				
-			}
+			// }
 		}
 		function mobileScroll(){
 			$(window).bind('scroll', function scrollTop(){
