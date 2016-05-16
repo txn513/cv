@@ -5,19 +5,22 @@ ul, li{
 	padding: 0;
 	margin: 0;
 }
+
 /*a {
 	color: #000;
 }*/
 /*public style*/
-html {
-	font-size: 625%;
-}
+// html {
+// 	font-size: 625%;
+// }
 body {
 	text-align: center;
 	font-family: "微软雅黑";
+	font-size: 14px; //16px
+	
 }
 h2 {
-	font-size: 0.18rem;
+	font-size: 18px; //18px;
 	font-weight: normal;
 }
 
@@ -25,10 +28,10 @@ h2 {
 	margin-bottom: 50px;
 }
 #content .wrap {
-	padding-top: 0.3rem;
+	padding-top: 30px;
 }
 #content .left_wrap {
-	padding-top: 0.1rem;
+	padding-top: 10px;
 	padding-left: 5%;
 	padding-right: 5%;
 }
@@ -81,17 +84,23 @@ h2 {
 	padding-left: 5%;
 	/*height: 30px;*/
 	line-height: 30px;
+	font-weight: 500;
 }
-#content .section .main_list .bullet {
+.main_list .bullet {
 	position: absolute;
 	left: 0;
 	top: 0;
-	font-size: 0.2rem;
+	font-size: 20px;
+	height: 0;
 
 }
 #content .section .main_list h2 span {
 	color: #a13322;
 }
+.right_wrap .main_list .bullet{
+	top: -9px;
+}
+
 /* public style end */
 /* header section */
 #header {
@@ -107,7 +116,10 @@ h2 {
 	width: 100%;
 	height: 300px;
 	/*border: 1px solid #000;*/
-	margin-bottom: 10px;
+	margin-bottom: 40px;
+}
+#content .right_wrap a {
+	color: #a13322;
 }
 /* container */
 /* container end */
@@ -125,11 +137,12 @@ h2 {
 #content .job-title h1 {
 	font-size: 24px;
 }
-#content .job-title p {
-	color: #a13322;
-	font-size: 10px;
+.left_wrap .job-title p {
+	
+	font-size: 12px;
 }
-#content .job-title .sub_title {
+.left_wrap .job-title .sub_title {
+	color: #a13322;
 	font-size: 14px;
 }
 /* contact section */
@@ -138,6 +151,10 @@ h2 {
 	width: 10%;
 	border-top: 1px solid #000;
 }*/
+#content .contact{
+	overflow:hidden;
+	margin-bottom: 30px;
+}
 #content .contact .list {
 	height: 100%;
 	padding: 0 10px;
@@ -148,17 +165,34 @@ h2 {
 	padding-left: 5%;
 	line-height: 30px;
 	font-size: 14px;
+	font-weight: 500;
 }
 #content .contact li span{
 	position: absolute;
-	left: 30%;
+	left: 35%;
+}
+#content .qrcode {
+	margin-top: 10px;
+	max-width: 100%;
+}
+#content .download {
+	width: 100%
+}
+#content .qr-wrap p{
+	color: #a13322;
+	font-size: 12px;
+	margin-top: 5px;
 }
 /* skill section */
+#content .skill {
+	margin-bottom: 65px;
+}
 #content .skill .row {
 	padding: 0 10px;
 }
 #content .skill span {
 	text-align: right;
+	// font-weight: 800;
 }
 #content .skill .progress {
 	background-color: #a13322;
@@ -176,7 +210,7 @@ h2 {
 	border-top: 1px solid #000;
 }*/
 #content .overview {
-	margin-bottom: 50px;
+	margin-bottom: 65px;
 }
 /* overview section end */
 /* experience section */
@@ -186,9 +220,6 @@ h2 {
 
 #content .experience .main_list .list_title{
 	height: auto;
-}
-#content .experience .main_list .bullet{
-	top: -6px;
 }
 #content .experience ul.details li{
 	padding: 0;
@@ -203,26 +234,68 @@ h2 {
 #content .project .main_list .list_title{
 	height: auto;
 }
-#content .project .main_list .bullet{
-	top: -6px;
-}
+
 #content .project ul.details li{
 	padding: 0;
 }
 
-/* project section end */
+//打印
+// #content .qr-wrap p{
+// 	font-size: 16px;
+// } 
+// #content .contact .list {
+// 	padding-left: 50px;
+// }
+// #content .contact li {
+// 	font-size: 18px;
+// }
+// #content .contact .qrcode {
+// 	width: 150px;
+// }
+// #content .job-title p {
+// 	font-size: 14px;
+// }
+// #content .job-title .sub_title {
+// 	font-size: 20px !important;
+// }
+// #content .section .main_list li{
+// 	line-height: 35px;
+// }
 
-@media screen and (max-width: 970px) {
+/* project section end */
+@media screen and (max-width: 768px) {
+	#content .job-title {
+		margin-bottom: 20px;
+	}
+	#content .col-md-5{
+		border-right: none;
+	}
+	#content .contact-top {
+		display: none;
+	} 
+
+}
+@media screen and (min-width: 769px) {
+	#content .contact-bottom {
+		display: none;
+	} 
+}
+@media screen and (max-width: 992px) {
 	body{font-family:Helvetica;}
 	#content .section .main_list li{
 		padding-left: 10%;
 		/*height: 30px;*/
 		line-height: 25px;
 	}
+	#content .overview,
+	#content .skill{
+		margin-bottom: 50px;
+	}
 	.section .icon:hover i{
 		-webkit-transform: translate(-50%, -50%);
 	}
-	#content .experience h2 {
+	#content .experience h2, 
+	#content .project h2 {
 		line-height: 30px;
 	}
 	#content .left_wrap {
@@ -231,4 +304,13 @@ h2 {
 	#content .right_wrap {
 		padding: 0;
 	}
+	.right_wrap .main_list .bullet {
+		top: 1px;
+	}
 }
+@media screen and (min-width: 1200px) {
+	.right_wrap .main_list {
+		margin-left: 1%; //10%
+	}
+}
+
